@@ -1,0 +1,9 @@
+{
+    "title": "Actionable Card (with NodeJs action handler)",
+    "description": "Actionable Card (with NodeJs action handler)",
+    "ctype": "Card",
+    "interfaces": "items",
+    "icon": "now:search",
+    "category": "orange",
+    "card": true
+}

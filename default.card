@@ -1,0 +1,55 @@
+$type: card
+rules: []
+properties:
+  title:
+    type: element
+    xtype: at-carbon-card-title
+    title: title
+    xgridcols: 12
+    xstyle: 
+    xclass: 
+    actionListeners:
+      - _start
+  content:
+    type: element
+    xtype: at-core-view
+    model: 
+    view: |2
+
+            <div class="layout-horizontal p prsm">        
+              <div at-click-action="test" class="font-body1 layout-self-center layout-flex">
+        			 {{hello}}<br>
+               Your Name <input at-input-action="input" value="{{name}}">            
+              </div>        
+          </div>
+    xgridcols: 12
+    xstyle: 
+    xclass: 
+    actionListeners:
+      - _all
+    default: 
+    modelRoot: state.model
+    title: undefined
+$meta:
+  cardId: !!int 444
+  preview-data: '{}'
+  preview-mode: live
+  preview-container: event
+  search-term: 
+  service-url: 
+  xclass: 
+  xstyle: 
+  code: |
+    action.initialize = function(evt) {
+      //debugger;
+    }
+
+
+    action.input = function(evt) {
+      
+      // copy new value to model
+      evt.model.name = evt.srcElement.value;
+      
+      // post model to /hello
+      evt.args.atAgentAction="hello";
+    }

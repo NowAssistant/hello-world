@@ -1,0 +1,64 @@
+contentType: Card
+title: Hello World
+name: hello-world
+CollectionModeField: null
+MaxItemsField: null
+PriorityField: null
+StreamSource: null
+CardComponent: hello-world/hello-world-card
+StoreMetadataField: null
+CommonPart:
+  Owner: !!int 2
+  Container: null
+  CreatedUtc: 2018-07-10T20:36:49.7956308Z
+  PublishedUtc: 2018-07-10T20:36:49.8295385Z
+  ModifiedUtc: 2018-07-10T20:36:49.7956308Z
+  VersionCreatedUtc: 2018-07-10T20:36:49.0000000
+  VersionPublishedUtc: 2018-07-10T20:36:49.0000000
+  VersionModifiedUtc: 2018-07-10T20:36:49.0000000
+ServicePart:
+  ConnectorTypeId: !!int 0
+  ConnectorName: Script
+  ServiceName: Script
+  Url: ~/api/adenin.GateKeeper.Script
+  ServiceParameters: '{}'
+SearchContextPart:
+  Query: null
+  Interface: null
+CommandPart:
+  CommandType: None
+  Command: 
+  DefaultDate: null
+  Intent: null
+  Ext: {}
+AppPart:
+  App: null
+  Url: 
+  ExtUrl: 
+  Priority: !!int 0
+  AppFaceId: !!int 0
+  Category: orange
+  Icon: now:search
+  CSSClasses: null
+  Enabled: !!bool false
+  NewWindow: !!bool false
+  UrlWithId: !!bool true
+  AvailableAppFaceRecords: null
+  HasPattern: !!bool false
+RoleViewPermissionsPart:
+  AllowedRoles:
+    - Authenticated
+  Audiences: []
+  Mandatory: False
+RecurringTaskPart:
+  Schedule: '- - - - -'
+  ActivityType: adenin.Now.Activities.CardTask.UpdateCard
+  StartDateUtc: null
+  EndDateUtc: null
+  NextOccurrenceUtc: null
+  Priority: !!int 5
+  Status: Enabled
+  NowFlag: 0
+  LastExecutionUTC: null
+  EnableWebHook: !!bool false
+  WebHookToken: null
